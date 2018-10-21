@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>SqlSearchTool</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>SqlSearch</servlet-name>
+    <servlet-class>com.search.sql.SearchTool</servlet-class>
+    
+  </servlet>
+   <servlet>
+    <servlet-name>Sqlcheck</servlet-name>
+    <servlet-class>com.search.sql.SearchTool</servlet-class>
+    
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Sqlcheck</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>SqlcheckEdit</servlet-name>
+    <servlet-class>com.search.sql.editFields</servlet-class>
+    
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SqlcheckEdit</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+</web-app>
